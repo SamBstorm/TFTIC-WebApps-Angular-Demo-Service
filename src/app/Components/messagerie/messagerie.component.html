@@ -1,0 +1,9 @@
+<ul>
+  <li *ngFor="let msg of messages">
+    <div [ngStyle]="{backgroundColor : (msg.wasRead)?'grey':'dodgerblue'}">
+      <h3>{{msg.sender}}</h3>
+      <p>{{msg.message}}</p>
+      <p>{{msg.date}}</p>
+    </div>
+  </li>
+</ul>
